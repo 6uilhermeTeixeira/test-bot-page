@@ -1,0 +1,149 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos customizados adicionais que complementam o Tailwind */
+body {
+    overflow-x: hidden;
+}
+
+/* Melhorias no hero para diferentes tamanhos de tela */
+#hero {
+    background-attachment: fixed;
+}
+
+/* Mobile First - Extra Small devices (phones, menos de 640px) */
+@media (max-width: 639px) {
+    #hero {
+        min-height: calc(100vh - 56px);
+        padding-bottom: 60px;
+    }
+    
+    #hero h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    #hero p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
+
+/* Small devices (landscape phones, 640px and up) */
+@media (min-width: 640px) and (max-width: 767px) {
+    #hero {
+        min-height: calc(100vh - 64px);
+    }
+    
+    #hero h1 {
+        font-size: 1.875rem;
+    }
+    
+    #hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #hero {
+        min-height: calc(100vh - 72px);
+    }
+    
+    #hero h1 {
+        font-size: 2.25rem;
+    }
+    
+    #hero p {
+        font-size: 1.125rem;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #hero {
+        min-height: calc(100vh - 80px);
+    }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    #hero {
+        min-height: calc(100vh - 80px);
+    }
+    
+    #hero h1 {
+        font-size: 3.75rem;
+    }
+    
+    #hero p {
+        font-size: 1.5rem;
+    }
+    
+    /* Adicionar margem lateral para centralizar melhor o conteúdo */
+    #hero .container {
+        max-width: 1400px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+/* Para telas muito grandes (1536px e acima) */
+@media (min-width: 1536px) {
+    #hero .container {
+        max-width: 1600px;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+/* Para telas ultra largas (1920px e acima) */
+@media (min-width: 1920px) {
+    #hero .container {
+        max-width: 1800px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+/* Animações suaves */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Melhorias no iframe para responsividade */
+iframe {
+    border-radius: 0.5rem;
+}
+
+/* Ajustes para orientação landscape em mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    #hero {
+        min-height: auto;
+        padding: 80px 1rem 80px;
+    }
+    
+    #hero h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #hero p {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Remover scroll horizontal */
+html {
+    overflow-x: hidden;
+}
+
+/* Espaçamento adicional para o footer */
+footer {
+    margin-top: 2rem; /* ajusta conforme necessário */
+}
