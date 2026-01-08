@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste seu Chatbot</title>
     <link rel="icon" href="favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
@@ -59,6 +60,48 @@
                            class="inline-block bg-green-500 hover:bg-red-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-lg text-base md:text-lg lg:text-xl transition-all duration-300 shadow-2xl transform hover:scale-105">
                             Deixe o seu feedback!
                         </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SECTION: Chat N8N -->
+    <section id="n8n-chat" class="relative min-h-screen flex items-center justify-center py-20" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+            <div class="flex flex-col items-center justify-center text-center">
+                
+                <div class="w-full text-white mb-8">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" style="text-shadow: 0px 0px 30px #000000">
+                        🤖 Chat N8N - Teste sua Automação
+                    </h2>
+                    <p class="text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mx-auto" style="text-shadow: 0px 0px 25px #000000">
+                        Converse diretamente com sua automação N8N
+                    </p>
+                </div>
+
+                <div class="w-full max-w-3xl">
+                    <div class="bg-white rounded-lg shadow-2xl p-6 md:p-8">
+                        
+                        <!-- Chat Container -->
+                        <div id="chat-container" class="bg-gray-50 rounded-lg h-[500px] overflow-y-auto mb-4 p-4 border-2 border-gray-200">
+                            <div id="chat-messages" class="flex flex-col gap-3"></div>
+                        </div>
+                        
+                        <!-- Input Area -->
+                        <div id="chat-input-area" class="flex gap-2">
+                            <input 
+                                type="text" 
+                                id="user-input" 
+                                placeholder="Digite sua mensagem..."
+                                autocomplete="off"
+                                class="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg text-base focus:outline-none focus:border-blue-500 transition-all"
+                            >
+                            <button id="send-button" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-all transform hover:scale-105 active:scale-95">
+                                Enviar
+                            </button>
+                        </div>
                     </div>
                 </div>
 
