@@ -14,13 +14,52 @@
     <header class="bg-gray-800 text-white py-4 fixed w-full top-0 z-50 shadow-lg">
         <nav class="container mx-auto px-4">
             <ul class="flex justify-center items-center space-x-4 md:space-x-8">
-                <li><a href="#home" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Home</a></li>
-                <li><a href="#about" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">About</a></li>
-                <li><a href="#services" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Services</a></li>
-                <li><a href="#contact" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Contact</a></li>
+                <li><a href="#about" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Inicio</a></li>
+                <li><a href="#hero" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Assistente Básico</a></li>
+                <li><a href="#n8n-chat" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Assistente Premium</a></li>
+                <li><a href="#contato" class="text-white font-bold hover:underline transition-all duration-300 text-sm md:text-base" style="text-shadow: 0px 0px 5px #000000">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- SECTION: Apresentação -->
+    <section id="about" class="pt-24 pb-4">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <!-- Logo -->
+            <div class="flex justify-center mb-4">
+                <img src="logo.png" alt="Logo" class="h-24 md:h-32 lg:h-40 w-auto object-contain drop-shadow-2xl">
+            </div>
+
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 mb-4">
+                    🚀 Transforme seu Atendimento com IA
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Soluções inteligentes de automação para empresas que desejam oferecer atendimento 24/7 com qualidade excepcional
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-3" style="text-shadow: 0px 0px 10px #000000">Resposta Instantânea</h3>
+                    <p class="text-gray-300 font-medium">Atenda seus clientes em segundos, sem tempo de espera, 24 horas por dia, 7 dias por semana.</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-3" style="text-shadow: 0px 0px 10px #000000">Inteligência Artificial</h3>
+                    <p class="text-gray-300 font-medium">Tecnologia de ponta com processamento de linguagem natural para conversas humanizadas.</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-3" style="text-shadow: 0px 0px 10px #000000">Integração Total</h3>
+                    <p class="text-gray-300 font-medium">Conecte com seus sistemas existentes: CRM, WhatsApp, e-mail e muito mais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="hero" class="relative min-h-screen flex items-center justify-center pt-16 md:pt-20">
         <div class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
@@ -106,16 +145,101 @@
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Contato -->
+    <section id="contato" class="py-16 bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                    📞 Entre em Contato
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                    Pronto para transformar seu atendimento? Estamos aqui para ajudar!
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Informações de Contato -->
+                <div class="space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">📱</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                                <a href="https://wa.me/5511964823535" class="text-green-400 hover:text-green-300 transition-colors">
+                                    +55 (11) 96482-3535
+                                </a>
+                                <p class="text-sm text-gray-400 mt-1">Resposta rápida durante o horário comercial</p>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <!-- CTA Button -->
-                    <div class="mt-8 mb-8">
-                        <a href="https://wa.me/5511964823535" 
-                           class="inline-block bg-green-500 hover:bg-red-600 text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-lg text-base md:text-lg lg:text-xl transition-all duration-300 shadow-2xl transform hover:scale-105">
-                            Deixe o seu feedback sobre o N8N!
-                        </a>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">📧</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">E-mail</h3>
+                                <a href="mailto:contato@exemplo.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+                                    contato@exemplo.com
+                                </a>
+                                <p class="text-sm text-gray-400 mt-1">Resposta em até 24 horas úteis</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">🌐</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Redes Sociais</h3>
+                                <div class="flex space-x-4 mt-2">
+                                    <a href="#" class="text-gray-300 hover:text-white transition-colors text-2xl">📘</a>
+                                    <a href="#" class="text-gray-300 hover:text-white transition-colors text-2xl">📸</a>
+                                    <a href="#" class="text-gray-300 hover:text-white transition-colors text-2xl">🔗</a>
+                                </div>
+                                <p class="text-sm text-gray-400 mt-1">Acompanhe nossas novidades</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                
+                <!-- Horário de Atendimento -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                    <h3 class="text-2xl font-bold mb-6">⏰ Horário de Atendimento</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-white/20 pb-3">
+                            <span class="font-semibold">Segunda a Sexta</span>
+                            <span class="text-green-400">09:00 - 18:00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/20 pb-3">
+                            <span class="font-semibold">Sábado</span>
+                            <span class="text-yellow-400">09:00 - 13:00</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-3">
+                            <span class="font-semibold">Domingo</span>
+                            <span class="text-red-400">Fechado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-blue-500/20 rounded-lg border border-blue-400/30">
+                        <p class="text-sm text-center">
+                            <strong>🤖 Chatbot disponível 24/7</strong><br>
+                            Nosso assistente virtual está sempre online!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Final -->
+            <div class="text-center mt-6 mb-4">
+                <a href="https://wa.me/5511964823535" 
+                   class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-2xl transform hover:scale-105">
+                    💬 Iniciar Conversa no WhatsApp
+                </a>
             </div>
         </div>
     </section>
