@@ -1,7 +1,7 @@
 // ============================================
 // CONFIGURAÇÃO - ALTERE AQUI A URL DO SEU N8N
 // ============================================
-const N8N_WEBHOOK_URL = 'https://synclead-n8n.gibuoa.easypanel.host/webhook/chatbot-html';
+const N8N_WEBHOOK_URL = 'https://n8n.syncleadteam.com/webhook/chatbot-html';
 
 // Elementos do DOM
 const chatMessages = document.getElementById('chat-messages');
